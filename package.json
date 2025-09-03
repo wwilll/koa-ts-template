@@ -6,11 +6,11 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development tsx watch index.ts",
     "debug": "cross-env NODE_ENV=development tsx --inspect --watch index.ts",
-    "build": "rm -rf dist/* && tsc --project ./ && bash ./filemove.sh",
+    "build": "rm -rf dist/* && tsc --project ./ && sh ./filemove.sh",
     "docker_nocache": "docker build --no-cache -t koa-ts-template:1.0.0 .",
     "docker": "docker build -t koa-ts-template:1.0.0 .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "bash -c \"if [ -d .husky ] && [ ! -d .husky/_ ]; then husky && echo husky init; fi\""
+    "prepare": "sh -c \"if [ -d .husky ] && [ ! -d .husky/_ ] && [ ! -d dist ]; then husky && echo husky init; fi\""
   },
   "keywords": [],
   "author": "",

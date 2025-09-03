@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ ! -d "dist" ]; then
-    mkdir dist
+	mkdir dist
 fi
 
 # cp -r logs/ dist/logs

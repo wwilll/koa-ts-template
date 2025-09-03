@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "module": "CommonJS",
     "baseUrl": ".",
     "outDir": "dist", // TS文件编译后会放入到此文件夹内
     "paths": {
